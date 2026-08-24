@@ -1,0 +1,51 @@
+/* Ajustes generales */
+body {
+    background-color: #f4f6f9 !important;
+}
+
+/* Panel lateral */
+.sidebar-card {
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.capa-list {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/* Scrollbar personalizado para la lista de capas */
+.capa-list::-webkit-scrollbar {
+    width: 6px;
+}
+.capa-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.capa-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+.capa-list::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Estilos para embellecer los Popups de Leaflet */
+.custom-popup .leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.popup-table {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+.popup-table th {
+    white-space: nowrap;
+    color: #495057;
+}
+
+/* Utilidad para el cursor */
+.cursor-pointer {
+    cursor: pointer;
+}
