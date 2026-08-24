@@ -49,3 +49,56 @@ body {
 .cursor-pointer {
     cursor: pointer;
 }
+
+
+/* Estilos para el panel flotante de metadatos */
+.panel-metadatos {
+    position: absolute;
+    bottom: 20px; /* Colocado en la esquina inferior izquierda */
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    z-index: 1000; /* Asegura que esté por encima del mapa de Leaflet */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    max-width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+}
+
+.panel-metadatos .panel-header {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.item-metadato {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+}
+
+.item-metadato:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.item-metadato h5 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.item-metadato ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.item-metadato ul li {
+    margin-bottom: 4px;
+}
